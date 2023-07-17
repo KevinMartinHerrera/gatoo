@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego de Gato con Personajes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="score-container">
+      <h2>Puntaje</h2>
+      <div class="score">
+        <img src="jugadores/jorge.png" alt="Primo 1" id="selectedCharacterX">
+        <span id="scoreX">0</span>
+      </div>
+      <div class="score">
+        <img src="jugadores/nicky.png" alt="Primo 2" id="selectedCharacterO">
+        <span id="scoreO">0</span>
+      </div>
+    </div>
+    
+   
+
+    <div class="game-container">
+        <h1> Gato Loco</h1>
+      <div id="board" class="board">
+        <div class="row">
+          <div class="cell" onclick="makeMove(0, 0)"></div>
+          <div class="cell" onclick="makeMove(0, 1)"></div>
+          <div class="cell" onclick="makeMove(0, 2)"></div>
+        </div>
+        <div class="row">
+          <div class="cell" onclick="makeMove(1, 0)"></div>
+          <div class="cell" onclick="makeMove(1, 1)"></div>
+          <div class="cell" onclick="makeMove(1, 2)"></div>
+        </div>
+        <div class="row">
+          <div class="cell" onclick="makeMove(2, 0)"></div>
+          <div class="cell" onclick="makeMove(2, 1)"></div>
+          <div class="cell" onclick="makeMove(2, 2)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
